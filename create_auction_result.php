@@ -1,5 +1,5 @@
 <?php include_once "header.php"?>
-
+<?php echo ('<div class="text-center">Auction successfully created! <a href="mylistings.php">View your new listing.</a></div>'); ?>
 <div class="container my-5">
 <?php
 include_once "function.php";
