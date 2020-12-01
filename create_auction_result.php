@@ -3,6 +3,7 @@
 <?php echo ('<div class="text-center">Auction successfully created! <a href="mylistings.php">View your new listing.</a></div>'); ?>
 
 <?php
+echo ('something');
 if (isDataValid()) {
     $newItem = getItem();
 
