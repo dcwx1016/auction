@@ -1,5 +1,5 @@
 <?php include_once "header.php"?>
-<?php include_once "function.php"?>
+
 <script type="text/javascript">
  $(window).on('load',function(){
  $('#auctionResult').modal('show');
@@ -8,6 +8,8 @@
 
 <div class="container my-5">
 <?php
+include_once "function.php";
+echo 'yes?';
 if (isDataValid()) {
     $newItem = getItem();
 
