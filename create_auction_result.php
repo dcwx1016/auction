@@ -27,23 +27,23 @@ $query = "INSERT INTO auction (title,auctionDescription,category,startingPrice,r
 $result = mysqli_query($GLOBALS['connection'], $query)
 or die('Error connecting to MySQL server.' . mysql_error());
 
-// $item_cat_print = '';
-// if ($item['auctionCategory'] == 'SportsandHobbies') {
-//     $item_cat_print = 'Sports, Hobbies & Leisure';} else if ($item['auctionCategory'] == 'HomeandGarden') {
-//     $item_cat_print = 'Home & Garden';} else if ($item['auctionCategory'] == 'CollectablesandArt') {
-//     $item_cat_print = 'Collectables & Art';} else if ($item['auctionCategory'] == 'BusiandIndu') {
-//     $item_cat_print = 'Business, Office & Industrial Supplies';} else {
-//     $item_cat_print = $item['auctionCategory'];
-// }
-// echo "<p>auctionTitle: ${item['auctionTitle']}</p>";
-// echo "<p>auctionDetails: ${item['auctionDetails']}</p>";
-// echo "<p>auctionCategory:" . $item_cat_print . "</p>";
-// echo "<p>auctionStartPrice: ${item['auctionStartPrice']}</p>";
-// echo "<p>auctionReservePrice: ${item['auctionReservePrice']}</p>";
-// echo "<p>auctionEndDate: ${item['auctionEndDate']}</p>";
-// echo "<p>auctionStarDate: ${item['auctionStartDate']}</p>";
+$item_cat_print = '';
+if ($item['auctionCategory'] == 'SportsandHobbies') {
+    $item_cat_print = 'Sports, Hobbies & Leisure';} else if ($item['auctionCategory'] == 'HomeandGarden') {
+    $item_cat_print = 'Home & Garden';} else if ($item['auctionCategory'] == 'CollectablesandArt') {
+    $item_cat_print = 'Collectables & Art';} else if ($item['auctionCategory'] == 'BusiandIndu') {
+    $item_cat_print = 'Business, Office & Industrial Supplies';} else {
+    $item_cat_print = $item['auctionCategory'];
+}
+echo "<p>auctionTitle: ${item['auctionTitle']}</p>";
+echo "<p>auctionDetails: ${item['auctionDetails']}</p>";
+echo "<p>auctionCategory:" . $item_cat_print . "</p>";
+echo "<p>auctionStartPrice: ${item['auctionStartPrice']}</p>";
+echo "<p>auctionReservePrice: ${item['auctionReservePrice']}</p>";
+echo "<p>auctionEndDate: ${item['auctionEndDate']}</p>";
+echo "<p>auctionStarDate: ${item['auctionStartDate']}</p>";
 
-// echo ('<div class="text-center">Auction successfully created! <a href="mylistings.php">View your new listing.</a></div>');
+echo ('<div class="text-center">Auction successfully created! <a href="mylistings.php">View your new listing.</a></div>');
 
 ?>
 
